@@ -3,3 +3,5 @@ numpy
 pandas
 pyvis
 plotly
+networkx
+matplotlib
