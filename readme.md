@@ -2,7 +2,12 @@
 
 [![Live App](https://img.shields.io/badge/Live_App-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)](https://hmm-visualizer.streamlit.app/)
 
-**Project Overview**
+**Built by:** Devanandan JY  
+**Register Number:** TCR24CS024  
+
+---
+
+## 📖 Project Overview
 An interactive visualization of the Baum-Welch algorithm — the core Expectation-Maximization (EM) method used to train Hidden Markov Models (HMMs). 
 
 The system functions as a visual debugger for the Baum-Welch algorithm, built entirely in Python.
@@ -60,7 +65,7 @@ A live log-likelihood chart tracks convergence across iterations, allowing you t
 
 ## 🛠️ Run Locally
 
-To run this project locally, ensure you have Python installed, then follow these steps:
+To run this project locally on your machine, ensure you have Python installed, then follow these steps:
 
 ```bash
 # 1. Clone the repository
