@@ -1,5 +1,7 @@
 # HMM Baum-Welch Visualizer 🚀
 
+[![Live App](https://img.shields.io/badge/Live_App-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)](https://hmm-visualizer.streamlit.app/)
+
 **Project Overview**
 An interactive visualization of the Baum-Welch algorithm — the core Expectation-Maximization (EM) method used to train Hidden Markov Models (HMMs). 
 
@@ -55,7 +57,7 @@ A live log-likelihood chart tracks convergence across iterations, allowing you t
 * **Data Visualization:** Plotly, Pyvis (JS/HTML wrappers), NetworkX, Matplotlib
 
 ---
-Hosted at:https://hmm-visualizer.streamlit.app/
+
 ## 🛠️ Run Locally
 
 To run this project locally, ensure you have Python installed, then follow these steps:
@@ -70,4 +72,3 @@ pip install -r requirements.txt
 
 # 3. Launch the visualizer
 streamlit run app.py
-
