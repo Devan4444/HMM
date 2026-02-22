@@ -55,7 +55,7 @@ A live log-likelihood chart tracks convergence across iterations, allowing you t
 * **Data Visualization:** Plotly, Pyvis (JS/HTML wrappers), NetworkX, Matplotlib
 
 ---
-
+Hosted at:https://hmm-visualizer.streamlit.app/
 ## 🛠️ Run Locally
 
 To run this project locally, ensure you have Python installed, then follow these steps:
@@ -70,3 +70,4 @@ pip install -r requirements.txt
 
 # 3. Launch the visualizer
 streamlit run app.py
+
