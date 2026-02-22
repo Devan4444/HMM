@@ -1,30 +1,72 @@
-# HMM Baum-Welch Visualizer
+# HMM Baum-Welch Visualizer 🚀
 
-A high-performance Python + Streamlit dashboard for visualizing the Expectation-Maximization (EM) process of the Baum-Welch algorithm — ideal for learning and analyzing Hidden Markov Models (HMMs) through interactive state transition diagrams.
+**Project Overview**
+An interactive visualization of the Baum-Welch algorithm — the core Expectation-Maximization (EM) method used to train Hidden Markov Models (HMMs). 
 
-## Features
+The system functions as a visual debugger for the Baum-Welch algorithm, built entirely in Python.
+
+---
+
+## 🎯 Educational Goal
+
+This project is designed to provide an intuitive, visual understanding of complex HMM mechanics:
+* Forward-Backward inference
+* Soft state assignments ($\gamma$)
+* Expected transition counts ($\xi$)
+* Expectation-Maximization updates
+* Likelihood convergence behavior
+
+---
+
+## ⚙️ What It Does
+
+Set up a custom Hidden Markov Model by defining:
+* Hidden states ($N$)
+* Emission symbols ($M$)
+* Observation sequence
+
+Then observe the algorithm execute step-by-step through:
+1. Forward Pass
+2. Backward Pass
+3. Gamma Computation
+4. Xi Computation
+5. Parameter Re-estimation ($\pi$, $A$, $B$)
+
+A live log-likelihood chart tracks convergence across iterations, allowing you to visually pinpoint exactly when the model optimizes.
+
+---
+
+## ✨ Features
 
 | Feature | Description |
 | :--- | :--- |
 | **Hybrid Rendering Engine** | Seamlessly switches between high-speed, flicker-free Matplotlib playback (during animation) and interactive, draggable Pyvis network graphs (when paused). |
-| **Real-time Convergence Dashboards** | Live-updating Plotly subplots tracking Log-Likelihood, Observation Probability $P(O|\lambda)$, Optimization Loss (NLL), and Error Rate. |
-| **Custom Media Player Dock** | A sticky, glassmorphism-styled UI dock for controlling animation playback, speed (1x to 10x), and stepping precisely through mathematical iterations. |
+| **Real-time Convergence Dashboards** | Live-updating Plotly subplots tracking Log-Likelihood, Observation Probability $P(O\|\lambda)$, Optimization Loss (Negative Log), and Error Rate. |
+| **Custom Media Player Dock** | A sticky UI dock for step-by-step algorithm playback with speed controls (1x to 10x). |
 | **Dynamic State Diagram** | Animated 3-tier layout (START $\rightarrow$ Hidden States $\rightarrow$ Observations) with dynamic edge widths, "squircle" nodes, and color-coded probability updates. |
-| **Fully Configurable** | Easily adjust the number of Hidden States (N), Observation Symbols (M), Max Iterations, and input custom observation sequences on the fly via the sidebar. |
+| **Dark Mode UI** | Native dark theme optimization for deep visual contrast on active probability wires. |
 
 ---
 
-## Installation & Setup
+## 💻 Technologies Used
+
+* **Frontend/UI:** Streamlit, Custom CSS Injection
+* **Math & Core Logic:** NumPy, Pandas
+* **Data Visualization:** Plotly, Pyvis (JS/HTML wrappers), NetworkX, Matplotlib
+
+---
+
+## 🛠️ Run Locally
 
 To run this project locally, ensure you have Python installed, then follow these steps:
 
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone [https://github.com/YOUR-USERNAME/hmm-baum-welch-visualizer.git](https://github.com/YOUR-USERNAME/hmm-baum-welch-visualizer.git)
 cd hmm-baum-welch-visualizer
 
-# Install the required dependencies
+# 2. Install the required dependencies
 pip install -r requirements.txt
 
-# Launch the Streamlit app
+# 3. Launch the visualizer
 streamlit run app.py
